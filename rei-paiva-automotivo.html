@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <base target="_self">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REI PAIVA COMERCIO & SERVIÇOS - Especialistas Automotivos</title>
+    <meta name="description" content="Manutenção e reparação elétrica e mecânica de veículos automotores em Sorocaba/SP. Peças e acessórios novos para seu veículo.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#1e3a8a",
+                        secondary: "#4b5563"
+                    },
+                    fontFamily: {
+                        sans: ['Roboto', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .hero-image {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://picsum.photos/1600/600?random=1');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body class="font-sans bg-gray-50 text-gray-800">
+    <!-- Header -->
+    <header class="bg-white shadow-md">
+        <nav class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="flex items-center">
+                <h1 class="text-xl font-bold text-primary">REI PAIVA COMERCIO & SERVIÇOS</h1>
+            </div>
+            <div class="hidden md:flex space-x-6">
+                <a href="#home" class="text-primary hover:text-blue-800 font-medium">Home</a>
+                <a href="#sobre" class="text-gray-600 hover:text-primary font-medium">Sobre Nós</a>
+                <a href="#servicos" class="text-gray-600 hover:text-primary font-medium">Serviços</a>
+                <a href="#contato" class="text-gray-600 hover:text-primary font-medium">Contato</a>
+            </div>
+            <button class="md:hidden text-primary">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-image text-white py-20 md:py-32">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-3xl md:text-5xl font-bold mb-4">REI PAIVA COMERCIO & SERVIÇOS</h1>
+            <p class="text-xl md:text-2xl mb-8">Excelência em serviços automotivos desde 1990</p>
+            <a href="#contato" class="bg-primary hover:bg-blue-800 text-white font-bold py-3 px-6 rounded-lg transition duration-300">Agende seu serviço</a>
+        </div>
+    </section>
+
+    <!-- Sobre Nós -->
+    <section id="sobre" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-primary mb-8 text-center">Sobre Nós</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-gray-50 p-6 rounded-lg shadow-sm">
+                    <h3 class="text-xl font-semibold text-primary mb-4">Missão</h3>
+                    <p class="text-gray-700">Oferecer serviços automotivos de qualidade, com transparência e comprometimento, garantindo a satisfação e segurança de nossos clientes.</p>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-lg shadow-sm">
+                    <h3 class="text-xl font-semibold text-primary mb-4">Valores</h3>
+                    <p class="text-gray-700">Ética, profissionalismo, qualidade técnica e atendimento personalizado são os pilares que norteiam nosso trabalho diário.</p>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-lg shadow-sm">
+                    <h3 class="text-xl font-semibold text-primary mb-4">Compromisso</h3>
+                    <p class="text-gray-700">Utilizamos apenas peças de qualidade e mão de obra especializada para garantir a durabilidade e segurança dos serviços prestados.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Serviços -->
+    <section id="servicos" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-primary mb-8 text-center">Nossos Serviços</h2>
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition duration-300">
+                    <div class="text-primary text-4xl mb-4">
+                        <i class="fas fa-car-battery"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Manutenção Elétrica</h3>
+                    <p class="text-gray-700">Diagnóstico e reparo completo do sistema elétrico automotivo, incluindo alternador, bateria, partida e iluminação.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition duration-300">
+                    <div class="text-primary text-4xl mb-4">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Manutenção Mecânica</h3>
+                    <p class="text-gray-700">Serviços de mecânica geral, incluindo motor, transmissão, suspensão, freios e sistema de direção.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition duration-300">
+                    <div class="text-primary text-4xl mb-4">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Peças e Acessórios</h3>
+                    <p class="text-gray-700">Comércio de peças e acessórios novos para veículos automotores, com garantia e procedência.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contato -->
+    <section id="contato" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-primary mb-8 text-center">Contato</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div>
+                    <h3 class="text-xl font-semibold text-primary mb-4">Informações</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <div class="text-primary mr-4 mt-1">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <p>Av. São Paulo, 310 – Bloco 1, Além Ponte<br>Sorocaba/SP – CEP 18013-001</p>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="text-primary mr-4">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <p>(15) 3222-3344</p>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="text-primary mr-4">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <p>contato@reipaiva.com.br</p>
+                        </div>
+                    </div>
+                    <div class="mt-8">
+                        <h4 class="text-lg font-semibold text-primary mb-3">Horário de Funcionamento</h4>
+                        <p>Segunda a Sexta: 8h às 18h<br>Sábado: 8h às 12h</p>
+                    </div>
+                </div>
+                <div>
+                    <form class="bg-gray-50 p-6 rounded-lg shadow-sm">
+                        <div class="mb-4">
+                            <label for="nome" class="block text-gray-700 font-medium mb-2">Nome</label>
+                            <input type="text" id="nome" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary">
+                        </div>
+                        <div class="mb-4">
+                            <label for="email" class="block text-gray-700 font-medium mb-2">E-mail</label>
+                            <input type="email" id="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary">
+                        </div>
+                        <div class="mb-4">
+                            <label for="telefone" class="block text-gray-700 font-medium mb-2">Telefone</label>
+                            <input type="tel" id="telefone" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary">
+                        </div>
+                        <div class="mb-4">
+                            <label for="mensagem" class="block text-gray-700 font-medium mb-2">Mensagem</label>
+                            <textarea id="mensagem" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"></textarea>
+                        </div>
+                        <button type="submit" class="bg-primary hover:bg-blue-800 text-white font-bold py-2 px-6 rounded-lg transition duration-300">Enviar Mensagem</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-primary text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <h3 class="text-xl font-bold mb-2">REI PAIVA COMERCIO & SERVIÇOS</h3>
+                    <p class="text-blue-100">CNPJ: 52.230.633/0001-90</p>
+                </div>
+                <div class="flex space-x-4">
+                    <a href="#" class="text-white hover:text-blue-200">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="text-white hover:text-blue-200">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="text-white hover:text-blue-200">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="border-t border-blue-800 mt-6 pt-6 text-center text-blue-100">
+                <p>&copy; 2023 REI PAIVA COMERCIO DE PECAS E SERVIÇOS AUTOMOTIVOS LTDA. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+    <script>
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Mobile menu toggle functionality would go here
+        // For simplicity, we're not implementing the full mobile menu in this example
+    </script>
+</body>
+</html>
